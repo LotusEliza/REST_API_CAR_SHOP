@@ -1,0 +1,9 @@
+    
+AddDefaultCharset utf-8
+
+RewriteEngine on
+#RewriteBase /~user3/REST_API/server/api/
+RewriteBase /rest/server/api/
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(.*)$ index.php
